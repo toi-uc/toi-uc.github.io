@@ -102,6 +102,7 @@ plugins:
 scholar:
 
   last_name: Urano
+  last_name_jp: 浦野
 
   style: apa
   locale: en
