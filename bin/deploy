@@ -6,6 +6,7 @@
 
 SRC_BRANCH="master"
 DEPLOY_BRANCH="gh-pages"
+FORCECI=0
 
 USAGE_MSG="usage: deploy [-h|--help] [-u|--user] [-s|--src SRC_BRANCH] [-d|--deploy DEPLOY_BRANCH]"
 
@@ -28,6 +29,10 @@ while [[ $# > 0 ]]; do
         ;;
         -d|--deploy)
         DEPLOY_BRANCH="$2"
+        shift
+        ;;
+        --force-ci)
+        FORCECI=1
         shift
         ;;
         *)
@@ -87,7 +92,12 @@ rm -R _site/
 
 # Push to DEPLOY_BRANCH
 git add -fA
-git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci skip]"
+if [ $FORCECI -eq 1 ]
+then
+  git commit --allow-empty -m "$(git log -1 --pretty=%B)"
+else
+  git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci skip]"
+fi
 git push -f -q origin $DEPLOY_BRANCH
 
 # Move back to SRC_BRANCH
