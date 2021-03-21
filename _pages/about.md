@@ -2,7 +2,7 @@
 layout: about
 permalink: /
 title: Kenta URANO
-description: Ph.D student at Graduate School of Engineering, Nagoya University, JAPAN.
+description: Doctor of Engineering.
 
 profile:
   align: right
@@ -16,7 +16,7 @@ news: true
 social: true
 ---
 
-Kenta URANO is a PhD student in the Department of Information and Communication Engineering, Graduate School of Engineering at Nagoya University, JAPAN.
+Kenta URANO received Doctor of Engineering at Department of Information and Communication Engineering, Graduate School of Engineering at Nagoya University, JAPAN.
 
 ----------
 
@@ -24,12 +24,12 @@ Research topics:
 
 * Indoor localization with BLE
 * Activity recognition
-* Entertainment computing
+* Entertainment computing with biosensing
 
 Education:
 
 * Ph.D student, Nagoya University  
-  (from Apr. 2018)
+  (Apr. 2018 - Feb. 2021)
 * Graduate School of Engineering, Nagoya University  
   (Apr. 2016 - Mar. 2018)
 * School of Engineering, Nagoya University  
