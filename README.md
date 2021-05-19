@@ -1,6 +1,6 @@
 # bio page
 
-[github io page](https://vrano714.github.io/)
+[github io page](https://toi-uc.github.io/)
 
 
 ## Commands
